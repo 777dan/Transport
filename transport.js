@@ -26,13 +26,13 @@ function GroundTran(name) {
 }
 
 AirTran.prototype = Object.create(Tran.prototype);
-AirTran.prototype.constructor = Tran;
+AirTran.prototype.constructor = AirTran;
 
 WaterTran.prototype = Object.create(Tran.prototype);
-WaterTran.prototype.constructor = Tran;
+WaterTran.prototype.constructor = WaterTran;
 
 GroundTran.prototype = Object.create(Tran.prototype);
-GroundTran.prototype.constructor = Tran;
+GroundTran.prototype.constructor = GroundTran;
 
 // Tran.prototype.go = function () {
 //     alert(this.about);
